@@ -73,7 +73,24 @@ match day:
 # ============== LUYỆN TẬP ==============
 # Bài 1: Viết chương trình nhập vào một số nguyên n, 
 # kiểm tra số đó có chia hết cho 5 hay không và in kết quả ra màn hình
+n = int(input("Nhập một số nguyên: "))
+if n % 5 == 0:
+    print(n, "chia hết cho 5")
+else:
+    print(n, "không chia hết cho 5")
 
 # Bài 2: Nhập điểm số của bạn từ bàn phím.
 # Yêu cầu: Xếp loại học lực học sinh. Biết rằng:
     # [8, 10]: Giỏi, [6.5, 8): Khá, [5, 6.5): TB, [0, 5): Yếu
+score = float(input("Nhập điểm số của bạn: "))
+if score < 0 or score > 10:
+    print("Điểm không hợp lệ")
+else:
+    if score >= 8:
+        print("Học lực: Giỏi")
+    elif score >= 6.5:
+        print("Học lực: Khá")
+    elif score >= 5:
+        print("Học lực: Trung bình")
+    else:
+        print("Học lực: Yếu")
