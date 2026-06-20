@@ -9,7 +9,7 @@
 
 # Bài 5: Nhập số điện bạn sử dụng (kWh)
 # Tính tiền điện theo dữ liệu sau và hiển thị ra màn hình
-# Bậc 1:    0kWh - 50kWh           giá 1.8k VND
-# Bậc 2:    51kWh - 100kWh         giá 2k VND
-# Bậc 3:    101kWh - 200kWh        giá 2.3k VND
-# Bậc 4:    trên 201kWh            giá 3k VND
+# Bậc 1:    0kWh - 50kWh           giá 1.8k VND / kWh
+# Bậc 2:    51kWh - 100kWh         giá 2k VND / kWh
+# Bậc 3:    101kWh - 200kWh        giá 2.3k VND / kWh
+# Bậc 4:    trên 201kWh            giá 3k VND / kWh
