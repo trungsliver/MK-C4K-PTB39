@@ -7,14 +7,14 @@
 # Tự luận
 # ............
 
-# Vấn đáp
-# Châu Anh: 2/3
-# Gia Linh: 3/3
-# Nam Phong: 0/3
-# Huy Quang: nghỉ
-# Khải Linh: 1.5/3
-# Đức Huy: 2/3
-# Bảo Phúc: 3/3
+# Vấn đáp - Trắc nghiệm - Tự luận
+# Châu Anh:     2/3     10/10       9/10    = 9.5
+# Gia Linh:     3/3     9/10        9/10    = 9
+# Nam Phong:    0/3     5/10        8/10    = 6.5
+# Huy Quang:    nghỉ
+# Khải Linh:    1.5/3   8/10        9/10    = 8
+# Đức Huy:      2/3     8/10        8/10    = 8
+# Bảo Phúc:     3/3     10/10       10/10   = 10
 
 # Kiểm tra lỗi
     # Máy tính sẽ thử chạy câu lệnh trong "try"
