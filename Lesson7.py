@@ -71,3 +71,5 @@ print('Phần tử nhỏ nhất:', min(num_list))
     #  - Duyệt i trong khoảng [1, n]
     #  - Đếm số lần n chia hết cho i
     #  - Nếu số lần chia hết khác 2 thì n không phải là số nguyên tố
+
+# Bài 2: In ra các số nguyên tố trong khoảng [50,100] và tính tổng các số đó
