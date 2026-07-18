@@ -67,9 +67,20 @@ print('Phần tử nhỏ nhất:', min(num_list))
 # Yêu cầu: Kiểm tra xem n có phải là số nguyên tố hay không
 # Biết rằng số nguyên tố là số chỉ chia hết cho 1 và chính nó
 
-# Gợi ý:
-    #  - Duyệt i trong khoảng [1, n]
-    #  - Đếm số lần n chia hết cho i
-    #  - Nếu số lần chia hết khác 2 thì n không phải là số nguyên tố
+n = int(input('Nhập số nguyên n: '))    
+    # Khai báo biến count để đếm số lượng ước số của n
+count = 0
+
+    # Duyệt i trong khoảng từ 1 đến n
+for i in range(1, n + 1):
+    # Nếu n chia hết cho i thì tăng biến count lên 1
+    if n % i == 0:
+        count += 1
+
+    # Hiển thị kết quả
+if count == 2:
+    print(f'{n} là số nguyên tố')
+else:
+    print(f'{n} không phải là số nguyên tố')
 
 # Bài 2: In ra các số nguyên tố trong khoảng [50,100] và tính tổng các số đó
