@@ -84,3 +84,21 @@ else:
     print(f'{n} không phải là số nguyên tố')
 
 # Bài 2: In ra các số nguyên tố trong khoảng [50,100] và tính tổng các số đó
+    # Khai báo biến lưu tổng các snt
+total = 0
+    # Duyệt n trong khoảng [50,100]
+for n in range(50, 101):
+    # Biến đếm số ước của n
+    count = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            count += 1
+
+    # Nếu n là số nguyên tố
+    if count == 2:
+        # Hiển thị n
+        print(n, end=' ')
+        # Cộng n vào tổng
+        total += n
+
+print(f'\nTổng các số nguyên tố trong khoảng [50,100] là: {total}')
