@@ -32,3 +32,12 @@ print('str3 in str1:', str3 in str1)    # False
     # Tìm vị trí substring: find()
 print('Vị trí str2 trong str1 =', str1.find(str2))      # 5
 print('Vị trí str3 trong str1 =', str1.find(str3))      # -1 (không tìm thấy)
+
+# Cắt chuỗi - slicing()
+name = 'hahahihihuhu'
+    # Cắt ở vị trí bất kì [start:end]
+print('name[4,8] =', name[4:8])      # hihi
+    # Cắt từ đầu đến vị trí bất kì [:end]
+print('name[:4] =', name[:4])        # haha
+    # Cắt từ vị trí bất kì đến cuối [start:]
+print('name[8:] =', name[8:])        # huhu
