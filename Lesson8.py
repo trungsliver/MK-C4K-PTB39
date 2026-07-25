@@ -101,4 +101,40 @@ print('Viết hoa chữ cái đầu:', name.title())
 x = 'MindX Technology School'
 y = 'mindx'
 print('x == y', x == y)      # False
-print('y.lower() in x.lower():', y.lower() in x.lower())     
+print('y.lower() in x.lower():', y.lower() in x.lower())     # True
+
+# Bài tập 1: Chuyển đổi kiểu dữ liệu danh sách: str => int
+arr = ['1', '2', '3', '4', '5', '6', '7', '8', '9']  # string
+    # Cách 1:
+arr1 = []
+for item in arr:
+    new_item = int(item)
+    arr1.append(new_item)
+print('arr1 =', arr1)      # int
+    # Cách 2:
+arr2 = [int(item) for item in arr]
+print('arr2 =', arr2)      # int
+
+# Bài tập 2: Tính tổng phần tử chẵn trong danh sách
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    # Cách cũ:
+total_even = 0
+for item in arr:
+    if item % 2 == 0:
+        total_even += item
+print('Tổng phần tử chẵn:', total_even)
+    # Cách mới:
+total_even2 = sum([item for item in arr if item % 2 == 0])
+print('Tổng phần tử chẵn:', total_even2)
+
+# Bài tập 3: Đếm số lượng phần tử lẻ trong danh sách
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    # Cách cũ:
+count_odd = 0
+for item in arr:
+    if item % 2 != 0:
+        count_odd += 1
+print('Số lượng phần tử lẻ:', count_odd)
+    # Cách mới:
+count_odd2 = len([item for item in arr if item % 2 != 0])
+print('Số lượng phần tử lẻ:', count_odd2)
