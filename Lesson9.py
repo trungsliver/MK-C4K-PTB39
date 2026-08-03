@@ -25,13 +25,13 @@ for i in range(10):
     print(i, end = ' ')
 
 # Vấn đáp - Trắc nghiệm - Tự luận
-# Châu Anh:     2/2
-# Gia Linh:     2/2
-# Nam Phong:    0.5/2
-# Huy Quang:    2/2
-# Khải Linh:    1.5/2
-# Đức Huy:      1/2
-# Bảo Phúc:     2/2
+# Châu Anh:     2/2     9/10    9/10    = 9
+# Gia Linh:     2/2     8/10    9/10    = 8.5
+# Nam Phong:    0.5/2   6/10    9/10    = 7
+# Huy Quang:    2/2     9/10    9/10    = 9
+# Khải Linh:    1.5/2   9/10    9/10    = 9
+# Đức Huy:      1/2     8/10    9/10    = 8
+# Bảo Phúc:     2/2     9/10    10/10   = 9.5
 
 # ========================= LUYỆN TẬP =========================
 a = [5, 2, 8, 1, 9, 3, 7, 4, 6]
@@ -65,3 +65,34 @@ print('Tổng các số chẵn trong danh sách a:', total_even)
 print('Tổng các số lẻ trong danh sách a:', total_odd)
 
 # Bài 5: Viết chương trình khai báo sẵn danh sách a. Viết chương trình bao gồm các chức năng: hiện toàn bộ phần tử danh sách, thêm phần tử vào danh sách, sửa phần tử danh sách, xóa phần tử trong danh sách.
+while True:
+    print('\nDanh sách a:', a)
+    print('===== Chọn chức năng =====')
+    print('1. Thêm phần tử vào danh sách')
+    print('2. Sửa phần tử trong danh sách')
+    print('3. Xóa phần tử trong danh sách')
+    print('4. Thoát chương trình')
+    print('===========================')
+    choice = input('Nhập lựa chọn của bạn (1-4): ').strip()
+    
+    match choice:
+        case '1':
+            new_item = int(input('Nhập phần tử mới: '))
+            a.append(new_item)
+        case '2':
+            index = int(input('Nhập vị trí phần tử cần sửa (0-{}): '.format(len(a)-1)))
+            if 0 <= index < len(a):
+                new_value = int(input('Nhập giá trị mới: '))
+                a[index] = new_value
+            else:
+                print('Vị trí không hợp lệ.')
+        case '3':
+            index = int(input('Nhập vị trí phần tử cần xóa (0-{}): '.format(len(a)-1)))
+            if 0 <= index < len(a):
+                a.pop(index)
+            else:
+                print('Vị trí không hợp lệ.')
+        case '4':
+            break
+        case _:
+            print('Lựa chọn không hợp lệ. Vui lòng thử lại.')
